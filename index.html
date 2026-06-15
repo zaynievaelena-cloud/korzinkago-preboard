@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#17A784" />
+<title>Korzinka Go — Preboarding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://me.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=zattIm6JX-m9Rfno2wHl16sU21pyn4LXOAOJo0MOxtxXjF2zRWW32rZ8A6pwU90WJE1jIevRqHZfi3rX53AIc13iz1wi8RmNtPDX9sbGpSRGKkHrkRcASnlkkb7O7wBH2j91bYyElHFaOI_vmJUwWgoRVJfejlwQ0u2kyoK8-9qNbX-54zUn8ysDfkZXDFrRBTYsNn7Vcys_schr2bItg9QxCnAjPmd0YiiAQq3Bo209t21meOFZJ_UqizxfT2-_Udzc-BndgEG_0MGmJNIomA" charset="UTF-8"></script><script type="text/javascript" src="https://me.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=f6fLSCRVnTB049Hk45zB0-9PA6HsHyELwgZ9_wstGdt8sDfrkG-MiA4s3-vIY_O6MaXYpbOdbQLtXx8_w09A1ho_zncG33Cbr4VYvi7azrSfzfjiZ12F7PmDbqNDyu-RINKxWJUO0WK0obBVjm70ABkr4qUhWPm64BIdyIOPLu4jVWvif4TsoJRy2SH7kE3vTT9BaWxXAkfAzdpjNsWFmNGgYXnWvWH8khP-zdeK3Y3Az6qSBpXlVIWAQIjx8i_QUtQ14yEms2M5wmEChocrHvnASfOh_cpJeRP2_3znbU_CMbPgRaZ7XZbuRMzZofmm-C1TZuDFGzSCs73-Y_qWLJ_q0k35RRW0ZApF7wOzasQ" charset="UTF-8"></script><style>
+:root {
+  --brand:#17A784; --brand-dark:#0E8266; --brand-50:#EFFAF6; --brand-100:#D7F2E7;
+  --ink:#0A1F18; --muted:#5B6E69; --line:#E5EFEB; --bg:#FBFDFC; --card:#fff;
+  --warn:#F59E0B; --crit:#E63946; --shadow:0 12px 34px -18px rgba(10,31,24,.24);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:78px} body{margin:0;background:var(--bg);color:var(--ink);font-family:Onest,system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased} img{max-width:100%;display:block} button{font:inherit;border:0;background:none;cursor:pointer;color:inherit} a{color:var(--brand-dark);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(251,253,252,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.topbar-in{height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:900;color:var(--brand-dark);font-size:22px;letter-spacing:-.04em;line-height:.9} .logo-mark{width:36px;height:28px;position:relative} .logo-mark span{display:block;height:6px;background:var(--brand);border-radius:99px;margin:4px 0} .logo-mark span:nth-child(2){margin-left:8px} .logo small{display:block;font-size:18px;color:var(--brand);letter-spacing:-.03em}
+.lang{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px;box-shadow:0 1px 2px rgba(0,0,0,.04)} .lang button{padding:7px 12px;border-radius:999px;font-weight:800;font-size:13px;color:var(--muted)} .lang button.active{background:var(--ink);color:#fff}
+.hero{padding:28px 0 16px} .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 13px;border-radius:999px;background:var(--brand-50);border:1px solid var(--brand-100);color:var(--brand-dark);font-weight:700;font-size:13px} .dot{width:7px;height:7px;border-radius:50%;background:var(--brand)}
+h1{font-size:clamp(32px,8vw,48px);line-height:1.04;letter-spacing:-.04em;margin:16px 0 10px;font-weight:900} h1 em{font-style:normal;color:var(--brand)} .lead{font-size:17px;color:var(--muted);margin-bottom:14px}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:14px;box-shadow:var(--shadow)}
+.hero-card img{width:100%;height:auto;object-fit:contain;border-radius:16px;background:#fff}
+.navgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:16px 0 8px} .navgrid a{height:38px;border-radius:12px;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--muted)} .navgrid a:hover{background:var(--brand);color:#fff}
+.section-title{margin:28px 0 14px;font-size:26px;line-height:1.15;letter-spacing:-.02em;font-weight:900}
+.step{background:var(--card);border:1px solid var(--line);border-radius:22px;margin:12px 0;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.step-head{display:flex;align-items:center;gap:12px;padding:16px;background:var(--brand-50);border-bottom:1px solid var(--brand-100)} .num{width:44px;height:44px;border-radius:14px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px;flex:0 0 auto} .step h2{margin:0;font-size:20px;line-height:1.2;letter-spacing:-.02em} .step-sub{font-size:13.5px;color:var(--muted);margin-top:3px}
+
+.step-head{cursor:pointer;position:relative;padding-right:52px;user-select:none}
+.step-head::after{content:"⌄";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:10px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--brand-dark);font-weight:900;transition:.2s ease}
+.step.is-open .step-head::after{transform:translateY(-50%) rotate(180deg);background:var(--brand);color:#fff;border-color:var(--brand)}
+.step-body{max-height:0;overflow:hidden;padding:0 16px;transition:max-height .35s ease,padding .25s ease}
+.step.is-open .step-body{max-height:9000px;padding:16px}
+.step.is-checked{border-color:var(--brand-100);box-shadow:0 8px 22px -18px rgba(10,31,24,.22)}
+.step.is-checked .num{background:var(--ink)!important;color:#fff!important}
+.step.is-checked .num::after{content:"✓";font-size:20px}.step.is-checked .num{font-size:0}
+.checklist-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px;margin:18px 0 22px;box-shadow:var(--shadow)}
+.checklist-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}.checklist-head h2{font-size:22px;line-height:1.15;margin:0}.checklist-head p{margin:6px 0 0;color:var(--muted);font-size:14px}.checklist-score{background:var(--brand-50);border:1px solid var(--brand-100);color:var(--brand-dark);border-radius:16px;padding:10px 12px;text-align:center;min-width:82px;font-weight:900}.checklist-score span{display:block;font-size:12px;color:var(--muted);font-weight:700}.checklist-list{display:grid;gap:8px}.check-item{display:flex;gap:10px;align-items:flex-start;background:var(--brand-50);border:1px solid var(--brand-100);border-radius:14px;padding:12px;cursor:pointer}.check-item input{width:22px;height:22px;accent-color:var(--brand);margin-top:1px;flex:0 0 auto}.check-item b{font-size:14.5px}.check-item small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}.check-item:has(input:checked){background:#F5FFFB;border-color:var(--brand)}.check-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.check-actions button{background:var(--brand);color:#fff;border-radius:12px;padding:10px 14px;font-weight:800}.check-actions button.secondary{background:#fff;color:var(--brand-dark);border:1px solid var(--brand-100)}
+ .cols{display:grid;grid-template-columns:1fr;gap:14px} @media(min-width:640px){.cols{grid-template-columns:1fr 1fr}}
+.img-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:0 1px 4px rgba(0,0,0,.04)} .img-card img{width:100%;height:auto;object-fit:contain;border-radius:12px;background:#fff;cursor:zoom-in} .caption{font-size:12.5px;color:var(--muted);margin:8px 2px 0;display:flex;align-items:center;gap:6px}
+.action-list{display:grid;gap:8px;margin:14px 0} .action{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px} .badge{width:26px;height:26px;border-radius:9px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex:0 0 auto} .action b{display:block;font-size:15px;line-height:1.25} .action span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
+.note{display:flex;gap:11px;border-radius:16px;padding:13px 14px;margin:14px 0;border:1px solid #FCE2A6;background:#FFF8E8;color:#7A4D03} .note.crit{background:#FFF0F1;border-color:#FFCBCF;color:#9A1822} .note .i{width:28px;height:28px;border-radius:9px;background:var(--warn);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex:0 0 auto} .note.crit .i{background:var(--crit)} .note b{display:block;font-size:14px} .note p{margin:2px 0 0;font-size:13.5px}
+.details{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px} .details h3{font-size:17px;margin:0 0 10px}
+.small-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px} @media(max-width:420px){.small-grid{grid-template-columns:1fr}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.86);z-index:100;display:none;align-items:center;justify-content:center;padding:18px} .modal.show{display:flex} .modal img{max-width:100%;max-height:90vh;width:auto;height:auto;object-fit:contain;background:#fff;border-radius:12px} .close{position:fixed;top:14px;right:14px;background:#fff;color:#111;border-radius:999px;width:44px;height:44px;font-weight:900;font-size:24px;box-shadow:0 8px 30px rgba(0,0,0,.2)}
+.publish{background:#0A1F18;color:#fff;border-radius:24px;padding:20px;margin:24px 0} .publish h2{margin:0 0 8px;font-size:22px} .publish ol{padding-left:20px;margin:10px 0 0} .publish li{margin:8px 0;color:rgba(255,255,255,.9)}
+footer{text-align:center;color:#8A9994;font-size:12px;padding:24px 0 40px}
+[data-lang="uz"] .ru, [data-lang="ru"] .uz{display:none!important}
+
+/* --- requested compact top checklist + mobile language fix --- */
+.lang button{touch-action:manipulation;position:relative;z-index:2;-webkit-user-select:none;user-select:none}
+.welcome-card{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(135deg,var(--brand-50),#fff);border:1px solid var(--brand-100);border-radius:22px;padding:16px;margin:18px 0 12px;box-shadow:var(--shadow)}
+.welcome-icon{flex:0 0 auto;width:38px;height:38px;border-radius:14px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px}
+.welcome-card h2{font-size:20px;line-height:1.2;margin:0 0 6px;color:var(--ink);letter-spacing:-.02em}.welcome-card p{font-size:14.5px;color:var(--muted);line-height:1.45}
+.checklist-card{margin:12px 0 12px;padding:14px;border-radius:20px;background:#ffffff;border:1.5px solid var(--brand-100);box-shadow:0 10px 28px -18px rgba(10,31,24,.24)}
+.checklist-head{margin-bottom:10px}.checklist-head h2{font-size:19px}.checklist-head p{font-size:13px}.checklist-score{min-width:70px;padding:8px 10px;border-radius:14px}.checklist-score b{font-size:20px}.checklist-score span{font-size:10.5px}
+.checklist-list{display:grid;grid-template-columns:1fr;gap:6px}.check-item{padding:9px 10px;border-radius:13px}.check-item input{width:20px;height:20px}.check-item b{font-size:13.5px}.check-item small{display:none}.check-actions{margin-top:10px}.check-actions button{padding:9px 12px;border-radius:11px;font-size:13px}
+.navgrid{margin:10px 0 14px}
+.hero-card{margin-top:12px}
+@media(min-width:560px){.checklist-list{grid-template-columns:1fr 1fr}.checklist-list .check-item:last-child{grid-column:1/-1}.welcome-card h2{font-size:22px}}
+@media(max-width:420px){.hero{padding-top:22px}.checklist-head{align-items:center}.checklist-head h2{font-size:18px}.check-actions button{width:100%}.welcome-card{padding:14px}.welcome-icon{width:34px;height:34px;border-radius:12px}}
+
+/* Brand logo fix: use the exact Korzinka Go logo image, no distortion */
+.logo.brand-logo-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex:0 0 auto;
+  width:auto;
+  min-width:0;
+  height:42px;
+  gap:0;
+  font-size:0;
+  line-height:0;
+  color:transparent;
+  letter-spacing:0;
+}
+.logo .brand-logo-img{
+  display:block;
+  width:154px;
+  height:auto;
+  max-height:42px;
+  object-fit:contain;
+  object-position:left center;
+}
+@media(max-width:420px){
+  .logo .brand-logo-img{width:132px;max-height:38px;}
+  .topbar-in{gap:8px;}
+}
+
+
+/* Keep language switch on the right side */
+.lang-switch,
+.language-switch,
+.lang-toggle,
+.language-toggle,
+.lang-tabs,
+.lang-selector,
+#langSwitch,
+#languageSwitch{
+  margin-left:auto;
+  flex-shrink:0;
+}
+
+.topbar-in,
+.header-in,
+.header-content,
+.navbar,
+.topbar{
+  display:flex;
+  align-items:center;
+}
+
+
+/* Mobile/Telegram optimization: external images + safe responsive layout */
+html, body { max-width: 100%; overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+.logo.brand-logo-wrap,
+.brand-logo-wrap{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  width:auto !important;
+  min-width:0 !important;
+  height:auto !important;
+  flex:0 0 auto !important;
+}
+.brand-logo-img,
+.logo .brand-logo-img{
+  display:block !important;
+  width:154px !important;
+  height:auto !important;
+  max-height:42px !important;
+  object-fit:contain !important;
+  object-position:left center !important;
+  flex:0 0 auto !important;
+}
+.lang-switch,
+.language-switch,
+.lang-toggle,
+.language-toggle,
+.lang-tabs,
+.lang-selector,
+#langSwitch,
+#languageSwitch{
+  margin-left:auto !important;
+  flex-shrink:0 !important;
+}
+@media(max-width:480px){
+  .brand-logo-img,
+  .logo .brand-logo-img{
+    width:128px !important;
+    max-height:36px !important;
+  }
+}
+
+
+/* Telegram/mobile safe patch */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden !important;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  position: static !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+@media(max-width: 768px){
+  body, main, .main, .page, .container, .wrap, .content, .accordion, .section {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .topbar, .topbar-in, header, .header, .header-in {
+    position: static !important;
+    top: auto !important;
+    max-width: 100% !important;
+  }
+  .hero, .grid, .cards, .checklist, .accordion-grid {
+    max-width: 100% !important;
+  }
+  .brand-logo-img,
+  .logo .brand-logo-img {
+    width: 128px !important;
+    height: auto !important;
+    max-height: 36px !important;
+    object-fit: contain !important;
+  }
+}
+
+</style>
+</head>
+<body data-lang="uz">
+<header class="topbar"><div class="wrap topbar-in"><div class="logo brand-logo-wrap"><img decoding="async" class="brand-logo-img" src="assets/media/logo.png" alt="Korzinka Go"></div></div><div class="lang" role="group" aria-label="Language"><button type="button" id="uzBtn" class="active" data-set-lang="uz">UZ</button><button type="button" id="ruBtn" data-set-lang="ru">РУ</button></div></div></header>
+<main class="wrap">
+<section class="hero">
+  <div class="eyebrow"><span class="dot"></span><span class="ru">Пребординг нового сотрудника</span><span class="uz">Yangi xodim uchun preboarding</span></div>
+  <h1><span class="ru">Как открыть зарплатную карту <em>Milliy</em></span><span class="uz"><em>Milliy</em> ish haqi kartasini qanday ochish kerak</span></h1>
+  <p class="lead ru">Пошаговая инструкция для новых сотрудников Korzinka Go: от установки приложения до получения карты.</p>
+  <p class="lead uz">Korzinka Go yangi xodimlari uchun bosqichma-bosqich yo‘riqnoma: ilovani o‘rnatishdan kartani olishgacha.</p>
+  <section class="welcome-card">
+    <div class="welcome-icon">✓</div>
+    <div>
+      <h2><span class="uz">Korzinka Go jamoasiga xush kelibsiz!</span><span class="ru">Добро пожаловать в команду Korzinka Go!</span></h2>
+      <p class="uz">Tabriklaymiz! Sizni yangi ish bosqichi bilan qutlaymiz. Quyidagi yo‘riqnoma Milliy ish haqi kartasini tez va to‘g‘ri ochishga yordam beradi.</p>
+      <p class="ru">Поздравляем с новым этапом! Эта инструкция поможет быстро и правильно открыть зарплатную карту Milliy.</p>
+    </div>
+  </section>
+<section class="checklist-card" id="selfcheck">
+    <div class="checklist-head">
+      <div>
+        <h2><span class="ru">Проверьте себя</span><span class="uz">O‘zingizni tekshiring</span></h2>
+        <p class="ru">Отмечайте выполненные шаги и проверьте готовность.</p>
+        <p class="uz">Bajarilgan bosqichlarni belgilang va tayyorgarlikni tekshiring.</p>
+      </div>
+      <div class="checklist-score"><b id="checkPct">0%</b><span class="ru">готово</span><span class="uz">tayyor</span></div>
+    </div>
+    <div class="checklist-list">
+      <label class="check-item"><input type="checkbox" data-step="1"><div><b class="ru">1. Подготовка</b><b class="uz">1. Tayyorgarlik</b><small class="ru">Milliy скачан, регистрация начата.</small><small class="uz">Milliy yuklandi, ro‘yxatdan o‘tish boshlandi.</small></div></label>
+      <label class="check-item"><input type="checkbox" data-step="2"><div><b class="ru">2. Приход в офис</b><b class="uz">2. Ofisga kelish</b><small class="ru">Талон взят, очередь отслеживается.</small><small class="uz">Talon olindi, navbat kuzatilmoqda.</small></div></label>
+      <label class="check-item"><input type="checkbox" data-step="3"><div><b class="ru">3. Оформление документов</b><b class="uz">3. Hujjatlarni rasmiylashtirish</b><small class="ru">Документы переданы и подписаны.</small><small class="uz">Hujjatlar topshirildi va imzolandi.</small></div></label>
+      <label class="check-item"><input type="checkbox" data-step="4"><div><b class="ru">4. Координатор и бейдж</b><b class="uz">4. Koordinator va beyj</b><small class="ru">Фото сделано, бейдж получен.</small><small class="uz">Suratga tushildi, beyj olindi.</small></div></label>
+      <label class="check-item"><input type="checkbox" data-step="5"><div><b class="ru">5. Приложение и заявка</b><b class="uz">5. Ilova va ariza</b><small class="ru">Данные введены, идентификация пройдена.</small><small class="uz">Ma’lumotlar kiritildi, identifikatsiya o‘tildi.</small></div></label>
+      <label class="check-item"><input type="checkbox" data-step="6"><div><b class="ru">6. Уведомление и подтверждение</b><b class="uz">6. Xabarnoma va tasdiqlash</b><small class="ru">Приглашение найдено, оферта подтверждена.</small><small class="uz">Taklif topildi, oferta tasdiqlandi.</small></div></label>
+      <label class="check-item"><input type="checkbox" data-step="7"><div><b class="ru">7. Получение карты</b><b class="uz">7. Kartani qabul qilish</b><small class="ru">Карта получена и активирована.</small><small class="uz">Karta olindi va faollashtirildi.</small></div></label>
+    </div>
+    <div class="check-actions"><button type="button" onclick="openNextUnchecked()"><span class="ru">Открыть следующий шаг</span><span class="uz">Keyingi bosqichni ochish</span></button><button class="secondary" type="button" onclick="resetChecklist()"><span class="ru">Сбросить чек-лист</span><span class="uz">Ro‘yxatni tozalash</span></button></div>
+  </section>
+<div class="navgrid"><a href="#s1">1</a><a href="#s2">2</a><a href="#s3">3</a><a href="#s4">4</a><a href="#s5">5</a><a href="#s6">6</a><a href="#s7">7</a></div>
+
+  <!-- duplicate hero image removed: checklist goes directly to accordion -->
+
+  <section id="s1" class="step is-open">
+  <div class="step-head"><div class="num">1</div><div><h2><span class="ru">Подготовка</span><span class="uz">Tayyorgarlik</span></h2><div class="step-sub"><span class="ru">Скачайте Milliy и заранее пройдите регистрацию</span><span class="uz">Milliy ilovasini yuklab oling va oldindan ro‘yxatdan o‘ting</span></div></div></div>
+  <div class="step-body">
+    <div class="cols">
+      <div class="img-card"><img loading="lazy" decoding="async" class="zoomable ru" src="assets/media/image_01.jpg" alt="Подготовка"><img loading="lazy" decoding="async" class="zoomable uz" src="assets/media/image_02.jpg" alt="Tayyorgarlik"><div class="caption ru">Изображение вставлено полностью, без обрезки.</div><div class="caption uz">Rasm to‘liq, kesilmasdan joylashtirilgan.</div></div>
+      <div><div class="action-list ru"><div class="action"><div class="badge">1</div><div><b>Найдите Google Play или App Store</b><span>Откройте магазин приложений на своем телефоне.</span></div></div><div class="action"><div class="badge">2</div><div><b>Найдите приложение Milliy</b><span>Введите в поиске “Milliy” или “Миллий банк”.</span></div></div><div class="action"><div class="badge">3</div><div><b>Установите приложение</b><span>Нажмите “Установить” и дождитесь завершения загрузки.</span></div></div><div class="action"><div class="badge">4</div><div><b>Зарегистрируйтесь</b><span>Введите номер телефона, который оформлен на вас.</span></div></div><div class="action"><div class="badge">5</div><div><b>Введите данные</b><span>Укажите паспортные данные/ПИНФЛ и дату рождения.</span></div></div><div class="action"><div class="badge">6</div><div><b>Пройдите FaceID</b><span>Подтвердите лицо в круге для фото.</span></div></div><div class="action"><div class="badge">7</div><div><b>Дождитесь сообщения</b><span>После принятия заявки дождитесь push/SMS и перейдите к идентификации.</span></div></div></div><div class="action-list uz"><div class="action"><div class="badge">1</div><div><b>Google Play yoki App Store’ni toping</b><span>Telefoningizda ilovalar do‘konini oching.</span></div></div><div class="action"><div class="badge">2</div><div><b>Milliy ilovasini toping</b><span>Qidiruvda “Milliy” yoki “Миллий банк” deb yozing.</span></div></div><div class="action"><div class="badge">3</div><div><b>Ilovani o‘rnating</b><span>“O‘rnatish” tugmasini bosing va yuklanishini kuting.</span></div></div><div class="action"><div class="badge">4</div><div><b>Ro‘yxatdan o‘ting</b><span>O‘zingiz nomingizga rasmiylashtirilgan telefon raqamini kiriting.</span></div></div><div class="action"><div class="badge">5</div><div><b>Ma’lumotlarni kiriting</b><span>Pasport ma’lumotlari/PINFL va tug‘ilgan sanani kiriting.</span></div></div><div class="action"><div class="badge">6</div><div><b>FaceID’dan o‘ting</b><span>Yuzingizni surat uchun doira ichida tasdiqlang.</span></div></div><div class="action"><div class="badge">7</div><div><b>Xabarni kuting</b><span>Ariza qabul qilingach, push/SMS xabarini kuting va identifikatsiyaga o‘ting.</span></div></div></div><div class="note crit"><div class="i">!</div><div><b class="ru">Важно</b><b class="uz">Muhim</b><p class="ru">Номер телефона обязательно должен быть оформлен на вас. С чужой SIM-картой вход в банковское приложение может не пройти.</p><p class="uz">Telefon raqami albatta o‘zingiz nomingizda bo‘lishi kerak. Begona SIM-karta bilan bank ilovasiga kirish muvaffaqiyatsiz bo‘lishi mumkin.</p></div></div></div>
+    </div>
+<div class="details"><h3 class="ru">Подробные экраны в приложении</h3><h3 class="uz">Ilovadagi batafsil ekranlar</h3><div class="small-grid">
+<div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_03.jpg" alt="Milliy screen 1"><div class="caption">1</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_04.jpg" alt="Milliy screen 2"><div class="caption">2</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_05.jpg" alt="Milliy screen 3"><div class="caption">3</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_06.jpg" alt="Milliy screen 4"><div class="caption">4</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_07.jpg" alt="Milliy screen 5"><div class="caption">5</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_08.jpg" alt="Milliy screen 6"><div class="caption">6</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_09.jpg" alt="Milliy screen 7"><div class="caption">7</div></div>
+</div></div>
+  </div>
+</section>
+<section id="s2" class="step">
+  <div class="step-head"><div class="num">2</div><div><h2><span class="ru">Приход в офис</span><span class="uz">Ofisga kelish</span></h2><div class="step-sub"><span class="ru">На ресепшене возьмите талон и дождитесь очереди</span><span class="uz">Resepshenda talon oling va navbatingizni kuting</span></div></div></div>
+  <div class="step-body">
+    <div class="cols">
+      <div class="img-card"><img loading="lazy" decoding="async" class="zoomable ru" src="assets/media/image_10.jpg" alt="Приход в офис"><img loading="lazy" decoding="async" class="zoomable uz" src="assets/media/image_11.jpg" alt="Ofisga kelish"><div class="caption ru">Изображение вставлено полностью, без обрезки.</div><div class="caption uz">Rasm to‘liq, kesilmasdan joylashtirilgan.</div></div>
+      <div><div class="action-list ru"><div class="action"><div class="badge">1</div><div><b>Подойдите ко входу</b><span>Пройдите в зону ресепшена.</span></div></div><div class="action"><div class="badge">2</div><div><b>Возьмите талон</b><span>Получите талон электронной очереди.</span></div></div><div class="action"><div class="badge">3</div><div><b>Следите за номером</b><span>Ждите, пока ваш номер появится на табло.</span></div></div><div class="action"><div class="badge">4</div><div><b>Подойдите к столу</b><span>Когда вас вызовут, пройдите к специалисту.</span></div></div></div><div class="action-list uz"><div class="action"><div class="badge">1</div><div><b>Kirish eshigiga boring</b><span>Resepshen zonasiga o‘ting.</span></div></div><div class="action"><div class="badge">2</div><div><b>Talon oling</b><span>Elektron navbat tizimidan talon oling.</span></div></div><div class="action"><div class="badge">3</div><div><b>Raqamni kuzating</b><span>Raqamingiz tablo ekranida chiqishini kuting.</span></div></div><div class="action"><div class="badge">4</div><div><b>Stolga yaqinlashing</b><span>Sizni chaqirishganda mutaxassis stoliga boring.</span></div></div></div><div class="note "><div class="i">!</div><div><b class="ru">Важно</b><b class="uz">Muhim</b><p class="ru">Следите за талоном и не пропустите свою очередь — это ускорит оформление.</p><p class="uz">Talon raqamingizni kuzatib boring va navbatingizni o‘tkazib yubormang — bu jarayonni tezlashtiradi.</p></div></div></div>
+    </div>
+  </div>
+</section>
+<section id="s3" class="step">
+  <div class="step-head"><div class="num">3</div><div><h2><span class="ru">Оформление документов</span><span class="uz">Hujjatlarni rasmiylashtirish</span></h2><div class="step-sub"><span class="ru">Выполните действия у специалиста</span><span class="uz">Mutaxassis huzurida kerakli amallarni bajaring</span></div></div></div>
+  <div class="step-body">
+    <div class="cols">
+      <div class="img-card"><img loading="lazy" decoding="async" class="zoomable ru" src="assets/media/image_12.jpg" alt="Оформление документов"><img loading="lazy" decoding="async" class="zoomable uz" src="assets/media/image_13.jpg" alt="Hujjatlarni rasmiylashtirish"><div class="caption ru">Изображение вставлено полностью, без обрезки.</div><div class="caption uz">Rasm to‘liq, kesilmasdan joylashtirilgan.</div></div>
+      <div><div class="action-list ru"><div class="action"><div class="badge">1</div><div><b>Передайте документы</b><span>Предоставьте специалисту необходимые документы.</span></div></div><div class="action"><div class="badge">2</div><div><b>Проверьте данные</b><span>Внимательно проверьте ФИО, ПИНФЛ и номер телефона.</span></div></div><div class="action"><div class="badge">3</div><div><b>Подпишите документы</b><span>Подпишите необходимые документы после проверки.</span></div></div><div class="action"><div class="badge">4</div><div><b>Дождитесь завершения</b><span>Дождитесь подтверждения, что оформление завершено.</span></div></div></div><div class="action-list uz"><div class="action"><div class="badge">1</div><div><b>Hujjatlarni topshiring</b><span>Mutaxassisga kerakli hujjatlarni topshiring.</span></div></div><div class="action"><div class="badge">2</div><div><b>Ma’lumotlarni tekshiring</b><span>F.I.Sh., PINFL va telefon raqamini diqqat bilan tekshiring.</span></div></div><div class="action"><div class="badge">3</div><div><b>Hujjatlarga imzo cheking</b><span>Tekshiruvdan so‘ng kerakli hujjatlarga imzo cheking.</span></div></div><div class="action"><div class="badge">4</div><div><b>Yakunlanishini kuting</b><span>Rasmiylashtirish yakunlangani tasdiqlanishini kuting.</span></div></div></div></div>
+    </div>
+  </div>
+</section>
+<section id="s4" class="step">
+  <div class="step-head"><div class="num">4</div><div><h2><span class="ru">Координатор по оформлению</span><span class="uz">Rasmiylashtirish koordinatori</span></h2><div class="step-sub"><span class="ru">Фото для бейджа и получение бейджа</span><span class="uz">Beyj uchun suratga tushish va beyjni olish</span></div></div></div>
+  <div class="step-body">
+    <div class="cols">
+      <div class="img-card"><img loading="lazy" decoding="async" class="zoomable ru" src="assets/media/image_14.jpg" alt="Координатор по оформлению"><img loading="lazy" decoding="async" class="zoomable uz" src="assets/media/image_15.jpg" alt="Rasmiylashtirish koordinatori"><div class="caption ru">Изображение вставлено полностью, без обрезки.</div><div class="caption uz">Rasm to‘liq, kesilmasdan joylashtirilgan.</div></div>
+      <div><div class="action-list ru"><div class="action"><div class="badge">1</div><div><b>Подойдите к координатору</b><span>Дождитесь очереди и подойдите к координатору.</span></div></div><div class="action"><div class="badge">2</div><div><b>Сделайте фото</b><span>Координатор сделает фото для бейджа.</span></div></div><div class="action"><div class="badge">3</div><div><b>Получите бейдж</b><span>Получите готовый бейдж с вашими данными.</span></div></div></div><div class="action-list uz"><div class="action"><div class="badge">1</div><div><b>Koordinatorga boring</b><span>Navbatingizni kuting va koordinator yoniga boring.</span></div></div><div class="action"><div class="badge">2</div><div><b>Foto cho‘ktiring</b><span>Koordinator beyj uchun fotosuratingizni oladi.</span></div></div><div class="action"><div class="badge">3</div><div><b>Beyj oling</b><span>Tayyor beyjni oling.</span></div></div></div></div>
+    </div>
+  </div>
+</section>
+<section id="s5" class="step">
+  <div class="step-head"><div class="num">5</div><div><h2><span class="ru">Приложение и заявка</span><span class="uz">Ilova va ariza</span></h2><div class="step-sub"><span class="ru">Скачайте приложение, зарегистрируйтесь и идите к координатору</span><span class="uz">Ilovani yuklab oling, ro‘yxatdan o‘ting va koordinator huzuriga boring</span></div></div></div>
+  <div class="step-body">
+    <div class="cols">
+      <div class="img-card"><img loading="lazy" decoding="async" class="zoomable ru" src="assets/media/image_16.jpg" alt="Приложение и заявка"><img loading="lazy" decoding="async" class="zoomable uz" src="assets/media/image_17.jpg" alt="Ilova va ariza"><div class="caption ru">Изображение вставлено полностью, без обрезки.</div><div class="caption uz">Rasm to‘liq, kesilmasdan joylashtirilgan.</div></div>
+      <div><div class="action-list ru"><div class="action"><div class="badge">1</div><div><b>Скачайте приложение банка</b><span>Если еще не скачали Milliy, установите его на телефон.</span></div></div><div class="action"><div class="badge">2</div><div><b>Пройдите регистрацию</b><span>Зарегистрируйтесь по номеру телефона.</span></div></div><div class="action"><div class="badge">3</div><div><b>Идите к координатору</b><span>После регистрации подойдите к координатору, чтобы продолжить оформление заявки.</span></div></div></div><div class="action-list uz"><div class="action"><div class="badge">1</div><div><b>Bank ilovasini yuklab oling</b><span>Agar Milliy hali o‘rnatilmagan bo‘lsa, uni telefoningizga o‘rnating.</span></div></div><div class="action"><div class="badge">2</div><div><b>Ro‘yxatdan o‘ting</b><span>Telefon raqamingiz orqali ro‘yxatdan o‘ting.</span></div></div><div class="action"><div class="badge">3</div><div><b>Koordinator huzuriga boring</b><span>Ro‘yxatdan o‘tgandan so‘ng arizani davom ettirish uchun koordinatorga boring.</span></div></div></div><div class="note "><div class="i">!</div><div><b class="ru">Важно</b><b class="uz">Muhim</b><p class="ru">Каждый шаг важно выполнить в правильном порядке.</p><p class="uz">Har bir qadamni to‘g‘ri tartibda bajarish muhim.</p></div></div></div>
+    </div>
+  </div>
+</section>
+<section id="s6" class="step">
+  <div class="step-head"><div class="num">6</div><div><h2><span class="ru">Уведомление и подтверждение</span><span class="uz">Xabarnoma va tasdiqlash</span></h2><div class="step-sub"><span class="ru">Дождитесь решения банка и подтвердите заявку в приложении</span><span class="uz">Bank qarorini kuting va arizani ilovada tasdiqlang</span></div></div></div>
+  <div class="step-body">
+    <div class="cols">
+      <div class="img-card"><img loading="lazy" decoding="async" class="zoomable ru" src="assets/media/image_18.jpg" alt="Уведомление и подтверждение"><img loading="lazy" decoding="async" class="zoomable uz" src="assets/media/image_19.jpg" alt="Xabarnoma va tasdiqlash"><div class="caption ru">Изображение вставлено полностью, без обрезки.</div><div class="caption uz">Rasm to‘liq, kesilmasdan joylashtirilgan.</div></div>
+      <div><div class="action-list ru"><div class="action"><div class="badge">1</div><div><b>Дождитесь уведомления</b><span>Банк проверит заявку. Уведомление придет в приложении и/или по SMS.</span></div></div><div class="action"><div class="badge">2</div><div><b>Откройте уведомления</b><span>В приложении Milliy нажмите на колокольчик.</span></div></div><div class="action"><div class="badge">3</div><div><b>Найдите приглашение</b><span>Найдите “Приглашение вступить в зарплатный проект”.</span></div></div><div class="action"><div class="badge">4</div><div><b>Откройте оферту</b><span>Откройте уведомление и нажмите “Ссылка на оферту”.</span></div></div><div class="action"><div class="badge">5</div><div><b>Примите условия</b><span>Прочитайте условия договора и нажмите “Применить”.</span></div></div></div><div class="action-list uz"><div class="action"><div class="badge">1</div><div><b>Xabarnomani kuting</b><span>Bank arizani tekshiradi. Xabar ilovada va/yoki SMS orqali keladi.</span></div></div><div class="action"><div class="badge">2</div><div><b>Xabarnomalarni oching</b><span>Milliy ilovasida qo‘ng‘iroqcha belgisini bosing.</span></div></div><div class="action"><div class="badge">3</div><div><b>Taklifnomani toping</b><span>“Ish haqi loyihasiga qo‘shilish taklifi” xabarini toping.</span></div></div><div class="action"><div class="badge">4</div><div><b>Ofertani oching</b><span>Xabarga kiring va “Oferta havolasi”ni bosing.</span></div></div><div class="action"><div class="badge">5</div><div><b>Shartlarni qabul qiling</b><span>Shartnoma shartlarini o‘qing va “Qo‘llash/Primenit” tugmasini bosing.</span></div></div></div><div class="note crit"><div class="i">!</div><div><b class="ru">Важно</b><b class="uz">Muhim</b><p class="ru">Без подтверждения заявки карта не будет оформлена.</p><p class="uz">Ariza tasdiqlanmasa, karta rasmiylashtirilmaydi.</p></div></div></div>
+    </div>
+<div class="details"><h3 class="ru">Где найти и подтвердить приглашение</h3><h3 class="uz">Taklifnomani qayerdan topish va tasdiqlash</h3><div class="small-grid">
+<div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_20.jpg" alt="Notification screen 8"><div class="caption">8</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_21.jpg" alt="Notification screen 9"><div class="caption">9</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_22.jpg" alt="Notification screen 10"><div class="caption">10</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_23.jpg" alt="Notification screen 11"><div class="caption">11</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_24.jpg" alt="Notification screen 12"><div class="caption">12</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_25.jpg" alt="Notification screen 13"><div class="caption">13</div></div><div class="img-card"><img loading="lazy" decoding="async" class="zoomable" src="assets/media/image_26.jpg" alt="Notification screen 14"><div class="caption">14</div></div>
+</div></div>
+  </div>
+</section>
+<section id="s7" class="step">
+  <div class="step-head"><div class="num">7</div><div><h2><span class="ru">Получение карты</span><span class="uz">Kartani qabul qilish</span></h2><div class="step-sub"><span class="ru">После подтверждения карта будет готова к выдаче</span><span class="uz">Tasdiqdan so‘ng karta topshirishga tayyor bo‘ladi</span></div></div></div>
+  <div class="step-body">
+    <div class="cols">
+      <div class="img-card"><img loading="lazy" decoding="async" class="zoomable ru" src="assets/media/image_27.jpg" alt="Получение карты"><img loading="lazy" decoding="async" class="zoomable uz" src="assets/media/image_28.jpg" alt="Kartani qabul qilish"><div class="caption ru">Изображение вставлено полностью, без обрезки.</div><div class="caption uz">Rasm to‘liq, kesilmasdan joylashtirilgan.</div></div>
+      <div><div class="action-list ru"><div class="action"><div class="badge">1</div><div><b>Дождитесь уведомления</b><span>Вы получите сообщение, что карта готова к получению.</span></div></div><div class="action"><div class="badge">2</div><div><b>Обратитесь к менеджеру</b><span>Подойдите к менеджеру с документом, удостоверяющим личность.</span></div></div><div class="action"><div class="badge">3</div><div><b>Получите карту</b><span>Менеджер проверит данные и передаст карту. Активируйте карту в приложении и установите PIN-код.</span></div></div></div><div class="action-list uz"><div class="action"><div class="badge">1</div><div><b>Xabarnoma kelishini kuting</b><span>Karta tayyor bo‘lgani haqida xabar olasiz.</span></div></div><div class="action"><div class="badge">2</div><div><b>Menejeringizga murojaat qiling</b><span>Shaxsni tasdiqlovchi hujjat bilan menejeringizga boring.</span></div></div><div class="action"><div class="badge">3</div><div><b>Kartani qabul qiling</b><span>Menejer ma’lumotlaringizni tekshiradi va kartani topshiradi. Ilovada kartani faollashtiring va PIN-kod o‘rnating.</span></div></div></div><div class="note "><div class="i">!</div><div><b class="ru">Важно</b><b class="uz">Muhim</b><p class="ru">Карту нельзя передавать третьим лицам. PIN-код храните в безопасности.</p><p class="uz">Kartani uchinchi shaxslarga bermang. PIN-kodni xavfsiz saqlang.</p></div></div></div>
+    </div>
+  </div>
+</section>
+</main><footer>Korzinka Go · Preboarding</footer>
+<div class="modal" id="modal" onclick="closeModal()"><button class="close" aria-label="close">×</button><img loading="lazy" decoding="async" id="modalImg" src="" alt="preview"></div>
+<script>
+function setLang(l){
+  document.body.dataset.lang=l;
+  document.documentElement.lang=l;
+  document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+    btn.classList.toggle('active', btn.dataset.setLang===l);
+    btn.setAttribute('aria-pressed', btn.dataset.setLang===l ? 'true' : 'false');
+  });
+}
+document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+  const handler=function(e){ e.preventDefault(); e.stopPropagation(); setLang(btn.dataset.setLang); };
+  btn.addEventListener('click', handler, {passive:false});
+  btn.addEventListener('touchend', handler, {passive:false});
+});
+setLang('uz');
+document.querySelectorAll('.zoomable').forEach(img=>img.addEventListener('click',e=>{e.stopPropagation();document.getElementById('modalImg').src=img.src;document.getElementById('modal').classList.add('show');}));
+function closeModal(){document.getElementById('modal').classList.remove('show');document.getElementById('modalImg').src='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();})
+
+// Accordion + self-check checklist
+const stepEls=[...document.querySelectorAll('.step')];
+function openStep(n, scroll=true){
+  stepEls.forEach(s=>s.classList.toggle('is-open', s.id === 's'+n));
+  if(scroll){document.getElementById('s'+n)?.scrollIntoView({behavior:'smooth',block:'start'});}
+}
+document.querySelectorAll('.step-head').forEach(head=>{
+  head.setAttribute('role','button');
+  head.setAttribute('tabindex','0');
+  head.addEventListener('click',()=>{
+    const step=head.closest('.step');
+    const willOpen=!step.classList.contains('is-open');
+    stepEls.forEach(s=>s.classList.remove('is-open'));
+    if(willOpen) step.classList.add('is-open');
+  });
+  head.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();head.click();}});
+});
+
+const checks=[...document.querySelectorAll('.check-item input')];
+function updateChecklist(){
+  const done=checks.filter(c=>c.checked).length;
+  const pct=Math.round(done/checks.length*100);
+  document.getElementById('checkPct').textContent=pct+'%';
+  checks.forEach(c=>document.getElementById('s'+c.dataset.step)?.classList.toggle('is-checked',c.checked));
+  localStorage.setItem('kg_preboarding_checks', JSON.stringify(checks.map(c=>c.checked)));
+}
+try{ const saved=JSON.parse(localStorage.getItem('kg_preboarding_checks')||'[]'); checks.forEach((c,i)=>{c.checked=!!saved[i]}); }catch(e){}
+checks.forEach(c=>c.addEventListener('change',()=>{
+  updateChecklist();
+  if(c.checked){
+    const next=checks.find(x=>!x.checked);
+    if(next){ setTimeout(()=>openStep(next.dataset.step,true),120); }
+  } else {
+    openStep(c.dataset.step,true);
+  }
+}));
+function openNextUnchecked(){
+  const next=checks.find(c=>!c.checked) || checks[checks.length-1];
+  openStep(next.dataset.step,true);
+}
+function resetChecklist(){
+  checks.forEach(c=>c.checked=false);
+  updateChecklist();
+  openStep(1,true);
+}
+updateChecklist();
+</script>
+</body></html>
